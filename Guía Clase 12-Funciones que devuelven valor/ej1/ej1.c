@@ -1,17 +1,18 @@
 #include <stdlib.h>
 #include <stdio.h>
+int NumerosEnPantalla2(); 
+int NumerosEnPantalla(); //Falta declaración de funciones.
+int main()
+{
+    int n1, n2;
+    printf("Ingrese un numero\n");
+    n1 = NumerosEnPantalla();
+    printf("Ingrese otro numero\n");
+    n2 = NumerosEnPantalla2();
+    system("cls");
 
- int main ()
- {
-     int n1,n2;
-          printf ("Ingrese un numero\n");
-     n1=NumerosEnPantalla();
-      printf ("Ingrese otro numero\n");
-     n2=NumerosEnPantalla2();
-     system ("cls");
-
-     printf ("Los numeros ingresados son \n%d  \n%d",n1,n2);
-     return 0;
+    printf("Los numeros ingresados son \n%d  \n%d", n1, n2);
+    return 0;
  }
  int NumerosEnPantalla()
  {
